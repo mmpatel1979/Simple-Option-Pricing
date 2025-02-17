@@ -88,7 +88,7 @@ def rho(r, v, T, K, S, type):
 underlying = np.linspace(K - 25, K + 25, 10)
 volatility = np.linspace(0.1, 1, 10)
 greeks = {"Option Price": np.array([[black_scholes(r, v, T, K, S, type) for S in underlying] for v in volatility]),
-          "Delta Price":np.array([[delta(r, v, T, K, S, type) for S in underlying] for v in volatility]),
+          "Delta Price": np.array([[delta(r, v, T, K, S, type) for S in underlying] for v in volatility]),
           "Gamma Price": np.array([[gamma(r, v, T, K, S, type) for S in underlying] for v in volatility]),
           "Vega Price": np .array([[vega(r, v, T, K, S, type) for S in underlying] for v in volatility]),
           "Theta Price": np.array([[theta(r, v, T, K, S, type) for S in underlying] for v in volatility]),
