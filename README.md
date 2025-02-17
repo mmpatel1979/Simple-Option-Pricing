@@ -1,5 +1,3 @@
-# Simple-Option-Pricing
-
 # Option Greeks Analysis
 This project implements the Black-Scholes model for pricing European options and calculating the Greeks: Delta, Gamma, Vega, Theta, and Rho. It also generates heatmaps for these values to visualize how they change with volatility and underlying price.
 
